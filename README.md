@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ALX Listing App
+
+## Overview
+The **ALX Listing App** is a modern Airbnb clone built with Next.js, TypeScript, TailwindCSS, and ESLint. This project focuses on scaffolding a well-structured, scalable foundation for a property listing application. The initial milestone sets up the folder structure, reusable components, and configurations to ensure a clean and maintainable codebase.
+
+## Project Goals
+- Scaffold a production-ready Next.js application with TypeScript and TailwindCSS.
+- Implement reusable components (`Card`, `Button`) for modularity.
+- Organize assets and constants for easy maintenance.
+- Ensure type safety and code quality with TypeScript and ESLint.
+
+## Project Structure
+
+alx-listing-app/
+├── components/ # Reusable UI components
+│ └── common/ # Shared components (Card, Button, etc.)
+│ ├── Card.tsx
+│ └── Button.tsx
+├── interfaces/ # TypeScript interfaces
+│ └── index.ts # (e.g., CardProps, ButtonProps)
+├── constants/ # Project constants (API URLs, text labels)
+│ └── index.ts
+├── public/ # Static assets
+│ └── assets/ # Images, SVGs, etc.
+├── pages/ # Next.js pages
+│ └── index.tsx # Homepage
+├── styles/ # Global CSS
+│ └── globals.css
+├── tailwind.config.js # TailwindCSS configuration
+├── tsconfig.json # TypeScript configuration
+├── package.json # Project dependencies
+└── README.md # Project documentation
+
+
+## Technologies Used
+- **Next.js 13+** (Pages Router)
+- **TypeScript** for type safety
+- **TailwindCSS** for responsive styling
+- **ESLint** for code quality
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js v16+
+- npm or yarn
+- VS Code (recommended) with TypeScript and TailwindCSS extensions
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/[your-username]/alx-listing-app.git
